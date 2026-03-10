@@ -12,3 +12,5 @@ for (int i = 0; i < intlist.Length; i++)
 {
     sum += intlist[i];
 }
+
+Console.WriteLine("average of numbers: " + sum/intlist.Length);
