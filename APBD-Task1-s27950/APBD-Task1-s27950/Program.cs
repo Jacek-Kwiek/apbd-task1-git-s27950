@@ -14,3 +14,18 @@ for (int i = 0; i < intlist.Length; i++)
 }
 
 Console.WriteLine("average of numbers: " + sum/intlist.Length);
+
+Console.WriteLine("average of numbers with function:" + average(intlist));
+
+static int average(int[] intlist)
+{
+
+    int sum = 0;
+
+    for (int i = 0; i < intlist.Length; i++)
+    {
+        sum += intlist[i];
+    }
+
+    return sum/intlist.Length;
+}
