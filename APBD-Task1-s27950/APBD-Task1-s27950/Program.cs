@@ -17,6 +17,7 @@ Console.WriteLine("average of numbers: " + sum/intlist.Length);
 
 Console.WriteLine("average of numbers with function:" + average(intlist));
 
+Console.WriteLine("maximum value in list: " + max(intlist));
 static int average(int[] intlist)
 {
 
@@ -28,4 +29,14 @@ static int average(int[] intlist)
     }
 
     return sum/intlist.Length;
+}
+
+static int max(int[] intlist)
+{
+    int max = intlist[0];
+    for (int i = 1; i < intlist.Length; i++)
+    {
+        if(intlist[i] > max) { max = intlist[i]; }
+    }
+    return max;
 }
